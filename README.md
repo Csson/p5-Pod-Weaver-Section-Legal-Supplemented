@@ -2,7 +2,7 @@
 
 Pod::Weaver::Section::Legal::Supplemented - Short intro
 
-![Requires Perl 5.10.1+](https://img.shields.io/badge/perl-5.10.1+-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Pod-Weaver-Section-Legal-Supplemented.svg?branch=master)](https://travis-ci.org/Csson/p5-Pod-Weaver-Section-Legal-Supplemented)
+![Requires Perl 5.10.1](https://img.shields.io/badge/perl-5.10.1-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Pod-Weaver-Section-Legal-Supplemented.svg?branch=master)](https://travis-ci.org/Csson/p5-Pod-Weaver-Section-Legal-Supplemented)
 
 # VERSION
 

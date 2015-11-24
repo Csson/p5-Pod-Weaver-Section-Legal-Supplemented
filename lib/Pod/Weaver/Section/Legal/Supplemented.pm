@@ -10,12 +10,16 @@ use Moose;
 extends 'Pod::Weaver::Section::Legal';
 use Types::Standard qw/ArrayRef Str/;
 
+sub mvp_multivalue_args { qw/text_before text_after/ }
+
 for my $where (qw/before after/) {
     has "text_$where" => (
         is => 'rw',
-        isa => ArrayRef[Str],
+        isa => ArrayRef->plus_coercions(Str, sub { [$_] }),
+        coerce => 1,
         traits => ['Array'],
         predicate => "has_$where",
+        default => sub { [] },
         init_arg => $where,
         handles => {
             "all_$where"  => 'elements',
