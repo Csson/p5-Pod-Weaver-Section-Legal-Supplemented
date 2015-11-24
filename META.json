@@ -1,5 +1,5 @@
 {
-   "abstract" : "Short intro",
+   "abstract" : "Add text to the Legal section",
    "author" : [
       "Erik Carlsson <info@code301.com>"
    ],
@@ -92,6 +92,7 @@
       "runtime" : {
          "requires" : {
             "Moose" : "2.00",
+            "Pod::Weaver::Role::AddTextToSection" : "0",
             "Pod::Weaver::Section::Legal" : "0",
             "Types::Standard" : "0",
             "perl" : "5.010001"
@@ -105,7 +106,7 @@
             "ExtUtils::MakeMaker" : "0",
             "File::Spec" : "0",
             "PPI" : "0",
-            "Pod::Weaver" : "0",
+            "Pod::Weaver" : "4.011",
             "Software::License::Artistic_1_0" : "0",
             "String::Cushion" : "0",
             "Syntax::Feature::Qi" : "0",

@@ -20,8 +20,9 @@ $assembler->change_section('Name');
 $assembler->end_section;
 
 $assembler->change_section('Legal::Supplemented');
-$assembler->add_value(before => 'The <trademark> is owned by <company>.');
-$assembler->add_value(after => ['The <other trademark> is also owned by <company>.', 'No affiliation']);
+$assembler->add_value(text_before => 'The <trademark> is owned by <company>.');
+$assembler->add_value(text_after => 'The <other trademark> is also owned by <company>.');
+$assembler->add_value(text_after => 'No affiliation');
 $assembler->end_section;
 
 my $weaver = Pod::Weaver->new_from_config_sequence($assembler->sequence);

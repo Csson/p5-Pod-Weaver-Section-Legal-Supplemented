@@ -7,7 +7,7 @@ use 5.010001;
 use ExtUtils::MakeMaker;
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Short intro",
+  "ABSTRACT" => "Add text to the Legal section",
   "AUTHOR" => "Erik Carlsson <info\@code301.com>",
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0
@@ -18,6 +18,7 @@ my %WriteMakefileArgs = (
   "NAME" => "Pod::Weaver::Section::Legal::Supplemented",
   "PREREQ_PM" => {
     "Moose" => "2.00",
+    "Pod::Weaver::Role::AddTextToSection" => 0,
     "Pod::Weaver::Section::Legal" => 0,
     "Types::Standard" => 0
   },
@@ -25,7 +26,7 @@ my %WriteMakefileArgs = (
     "ExtUtils::MakeMaker" => 0,
     "File::Spec" => 0,
     "PPI" => 0,
-    "Pod::Weaver" => 0,
+    "Pod::Weaver" => "4.011",
     "Software::License::Artistic_1_0" => 0,
     "String::Cushion" => 0,
     "Syntax::Feature::Qi" => 0,
@@ -45,7 +46,8 @@ my %FallbackPrereqs = (
   "File::Spec" => 0,
   "Moose" => "2.00",
   "PPI" => 0,
-  "Pod::Weaver" => 0,
+  "Pod::Weaver" => "4.011",
+  "Pod::Weaver::Role::AddTextToSection" => 0,
   "Pod::Weaver::Section::Legal" => 0,
   "Software::License::Artistic_1_0" => 0,
   "String::Cushion" => 0,
