@@ -23,7 +23,7 @@ prereqs:
       - syntax
       - Syntax::Feature::Qi
       - PPI
-      - Pod::Weaver
+      - Pod::Weaver: 4.011
       - Software::License::Artistic_1_0
 
 plugins:
