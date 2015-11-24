@@ -2,7 +2,7 @@
 
 Pod::Weaver::Section::Legal::Supplemented - Short intro
 
-![Requires Perl unknown](https://img.shields.io/badge/perl-unknown-brightgreen.svg) [![Travis status](https://api.travis-ci.org//.svg?branch=master)](https://travis-ci.org//)
+![Requires Perl 5.10.1](https://img.shields.io/badge/perl-5.10.1-brightgreen.svg) [![Travis status](https://api.travis-ci.org/Csson/p5-Pod-Weaver-Section-Legal-Supplemented.svg?branch=master)](https://travis-ci.org/Csson/p5-Pod-Weaver-Section-Legal-Supplemented)
 
 # VERSION
 
@@ -10,13 +10,23 @@ Version 0.0001, released 2015-11-24.
 
 # SYNOPSIS
 
-    use Pod::Weaver::Section::Legal::Supplemented;
+    ; in weaver.ini
+    [Legal::Supplemented]
+    before = This text is rendered before the auto-generated
+    before = from [Legal]
+    after = And this text comes after
+    after =
+    after = More text here
 
 # DESCRIPTION
 
-Pod::Weaver::Section::Legal::Supplemented is ...
+Pod::Weaver::Section::Legal::Supplemented is a sub-class of [Pod::Weaver::Section::Legal](https://metacpan.org/pod/Pod::Weaver::Section::Legal) that gives the possibility to add text before and/or after the auto-generated
+text that `[Legal]` renders. Sometimes it might be nice/necessary to mention relationships to companies, trademarks, et cetera used or mentioned. This plugin gives the
+opportunity to do that without losing the functionality of `[Legal]` and without having to create another section.
 
 # SEE ALSO
+
+- [Pod::Weaver::Section::LegalWithAddendum](https://metacpan.org/pod/Pod::Weaver::Section::LegalWithAddendum) which inspired this
 
 # SOURCE
 

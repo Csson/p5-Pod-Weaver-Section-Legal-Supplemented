@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.016000;
+use 5.010001;
 
 use ExtUtils::MakeMaker;
 
@@ -14,13 +14,25 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "Pod-Weaver-Section-Legal-Supplemented",
   "LICENSE" => "perl",
-  "MIN_PERL_VERSION" => "5.016000",
+  "MIN_PERL_VERSION" => "5.010001",
   "NAME" => "Pod::Weaver::Section::Legal::Supplemented",
-  "PREREQ_PM" => {},
+  "PREREQ_PM" => {
+    "Moose" => "2.00",
+    "Pod::Weaver::Section::Legal" => 0,
+    "Types::Standard" => 0
+  },
   "TEST_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0,
     "File::Spec" => 0,
-    "Test::More" => "0.96"
+    "PPI" => 0,
+    "Pod::Weaver" => 0,
+    "Pod::Weaver::Section::Legal::Supplemented" => 0,
+    "Software::License::Artistic_1_0" => 0,
+    "String::Cushion" => 0,
+    "Syntax::Feature::Qi" => 0,
+    "Test::Differences" => 0,
+    "Test::More" => "0.96",
+    "syntax" => 0
   },
   "VERSION" => "0.0001",
   "test" => {
@@ -32,7 +44,18 @@ my %WriteMakefileArgs = (
 my %FallbackPrereqs = (
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,
-  "Test::More" => "0.96"
+  "Moose" => "2.00",
+  "PPI" => 0,
+  "Pod::Weaver" => 0,
+  "Pod::Weaver::Section::Legal" => 0,
+  "Pod::Weaver::Section::Legal::Supplemented" => 0,
+  "Software::License::Artistic_1_0" => 0,
+  "String::Cushion" => 0,
+  "Syntax::Feature::Qi" => 0,
+  "Test::Differences" => 0,
+  "Test::More" => "0.96",
+  "Types::Standard" => 0,
+  "syntax" => 0
 );
 
 
