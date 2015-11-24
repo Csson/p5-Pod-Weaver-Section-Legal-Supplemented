@@ -24,7 +24,6 @@ prereqs:
       - Syntax::Feature::Qi
       - PPI
       - Pod::Weaver
-      - Pod::Weaver::Section::Legal::Supplemented
       - Software::License::Artistic_1_0
 
 plugins:
